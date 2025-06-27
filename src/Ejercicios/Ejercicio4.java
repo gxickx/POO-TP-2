@@ -24,6 +24,7 @@ public class Ejercicio4 {
         String c = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         Random r = new Random();
 
+        // recomendación cuando se concatenan strings en un bucle, utilizar StringBuilder
         for (int i = 0; i < longitud; i++) {
             int indice = r.nextInt(c.length());
             contrasena += c.charAt(indice);
